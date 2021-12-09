@@ -1,4 +1,4 @@
-
+"""
 from kivy.app import App
 from kivy.uix.label import Label
 
@@ -13,4 +13,28 @@ class MainApp(App):
 if __name__ == '__main__':
     app = MainApp()
     app.run()
+"""
 
+from kivy.app import App
+from kivy.uix.button import Button
+from kivy.uix.floatlayout import FloatLayout
+from kivy.config import Config
+
+Config.set('graphics', 'resizable', True)
+
+
+class YourApp(App):
+    def build(self):
+        layout = FloatLayout()
+        next_page = Button(text='next page',
+                           size_hint=(.2, .1),
+                           pos=(600,50),
+                           background_color='red')
+
+
+        layout.add_widget(next_page)
+
+        return layout
+
+
+YourApp().run()
