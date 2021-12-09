@@ -27,7 +27,7 @@ class YourApp(App):
     def build(self):
         layout = FloatLayout()
         next_page = Button(text='next page',
-                           size_hint=(.2, .1),
+                           size_hint=(.2, .2),
                            pos=(600,50),
                            background_color='red')
 
