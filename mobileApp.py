@@ -35,8 +35,6 @@ class YourApp(App):
 class P(FloatLayout):
     pass
 
-class A(FloatLayout):
-    pass
 
 def show():
     show=P()

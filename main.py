@@ -43,9 +43,7 @@ class LoginApp(App):
         if(not os.path.exists(conf_directory)):
             os.makedirs(conf_directory)
 
-        return super(LoginApp, self).get_application_config(
-            '%s/config.cfg' % (conf_directory)
-        )
+        return super(LoginApp, self).get_application_config('%s/config.cfg' % (conf_directory))
 
 if __name__ == '__main__':
     LoginApp().run()
